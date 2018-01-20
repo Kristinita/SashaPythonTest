@@ -15,12 +15,14 @@ log = logbook.Logger("run_tests logbook")
 
 
 def main():
-    if __name__ == '__main__':
-        run(clize_log_level, alt=[version, v], exit=False)
-        body_check.eric_body_summary()
-
+    run(clize_log_level, alt=[version, v], exit=False)
+    body_check.eric_body_summary()
 
     if body_check.body_test is True:
         log.notice("Success!")
     else:
         log.error("Failure!")
+
+
+if __name__ == '__main__':
+    main()
