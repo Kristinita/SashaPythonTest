@@ -5,7 +5,7 @@ Check, contains files of current directory <body> or no.
 
 import logbook
 
-from config import all_txt_in_eric_room_wihtout_subfolders
+from sashatest.config import all_txt_in_eric_room_wihtout_subfolders
 
 log = logbook.Logger("eric_body logbook")
 
